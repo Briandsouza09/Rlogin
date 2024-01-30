@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.box {
+  flex: 1 1 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  height: 100%;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 20px;
+  font-size: 36px;
+  color: #fff;
+}
+
+.box-left {
+  background-color: aqua;
+  flex: 1.2;
+}
+
+.box-right {
+  background-color: rgb(255, 255, 255);
+}
+
+/* Add more styling as needed for form elements */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Adjust spacing and margin as needed */
+.muiFormControl-root {
+  margin: 8px 0;
+}
+
+/* Style the submit button */
+button {
+  margin-top: 16px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    flex: 1 0 100%;
+  }
+}
+.box-left {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+   /* Optional: Add a semi-transparent background */
+  padding: 10px; /* Optional: Add padding for better visibility */
+}
